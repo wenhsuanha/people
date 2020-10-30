@@ -9,23 +9,49 @@
     <link rel="icon" href="images.png" sizes="60*60" type="image/x-iconf">
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-    <title>人</title>
+    <style>
+     #home img{
+         max-width: 100%;
+     }
+     .ui-body-c,  .ui-header{
+        font-family: 'Noto Sans TC',sans-serif;
+     }
+     .ui-footer,  .ui-header{
+        font-family: 'Trispace',sans-serif;
+     }
+     .video-wrapper{
+    position: relative;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+    }
+
+    .video-wrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0; 
+        width: 100%;
+        height: 100%;
+    }
+
+    </style>
+    <title>人的一生</title>
 </head>
 <body>
     <!---首頁-->
-    <div data-role="page" id="home">
+    <div data-role="page" id="page00">
         <div data-role="header">
             <h1>人的一生</h1>
         </div>
         <div role="main" class="ui-content">
            <p>Hello world</p>
            <ul>
-               <li><a href="#page01">嬰兒</a></li>
-               <li><a href="#page02">青壯年</a></li>
-               <li><a href="#page03">中年</a></li>
-               <li><a href="#page04">老年</a></li>
-               <li><a href="#aboutus">關於我們</a></li>
+               <li><a href="#page01" data-role="button" >嬰兒</a></li>
+               <li><a href="#page02" data-role="button">青壯年</a></li>
+               <li><a href="#page03"data-role="button">中年</a></li>
+               <li><a href="#page04"data-role="button">老年</a></li>
+               <li><a href="#aboutus"data-role="button">關於我們</a></li>
            </ul>
+          
         </div>
         <div data-role="footer" data-position="fixed">
             <h4>copyright &copy; 2020 Wenzao DCAM wenhsuanha</h4>
@@ -35,11 +61,25 @@
     <!---嬰兒-->
     <div data-role="page" id="page01">
         <div data-role="header">
-            <h1>人</h1>
+            <h1>嬰兒</h1>
         </div>
         <div role="main" class="ui-content">
-           <p>嬰兒</p>
+        <h1>嬰兒</h1>
+        <p>嬰兒是指剛出生的兒童，是人類一生的第一階段。根據《說文解字》所述，嬰兒的「嬰」字，本意為女性的頸部飾物等寶貝，後引申解作為抱在胸前哺乳之初生兒。而嬰兒的英文「infant」源於拉丁文「in-fans」一詞，意為「不懂說話」。英語一般語境下是指小於一歲或未懂得走路的人類[1]。中文中「嬰兒」則指一歲以下或未斷奶的兒童，不管是否能夠行走。</p>
+        <img src="image/Baby.jpg"  alt="">
+        <div role="main" class="ui-content">
+                <div class="video-wrapper">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/7bvHtmKhcJ0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div> 
+         </div>
+           <a href="#page00">回到 主頁</a>
+           <a href="#page02">回到 青壯年</a>
+           <a href="#page03">回到 中年</a>
+           <a href="#page04">回到 老年</a>
+           <a href="#aboutus">回到 關於我們</a>
         </div>
+
+        
         <div data-role="footer" data-position="fixed">
             <h4>copyright &copy; 2020 Wenzao DCAM wenhsuanha</h4>
         </div>
@@ -48,10 +88,25 @@
     <!---青壯年-->
     <div data-role="page" id="page02">
         <div data-role="header">
-            <h1>人</h1>
+            <h1>青壯年</h1>
         </div>
         <div role="main" class="ui-content">
-           <p>青壯年</p>
+            <h1>青壯年</h1>
+           <p>青壯年（young adult）一般是指年齡在18至29周歲年紀的成人，不過也有不同的定義（例如愛利克·埃里克森提出的埃里克森社會心理發展階段等）。
+                說到青壯年就想熱血一波
+           </p>
+           <img src="image/younger.jpg" alt="">
+           <div role="main" class="ui-content">
+                <div class="video-wrapper">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/LXzGKWpwA3A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div> 
+         </div>
+
+           <a href="#page00">回到 主頁</a>
+           <a href="#page01">回到 嬰兒</a>
+           <a href="#page03">回到 中年</a>
+           <a href="#page04">回到 老年</a>
+           <a href="#aboutus">回到 關於我們</a>
         </div>
         <div data-role="footer" data-position="fixed">
             <h4>copyright &copy; 2020 Wenzao DCAM wenhsuanha</h4>
@@ -61,36 +116,64 @@
     <!---中年-->
     <div data-role="page" id="page03">
         <div data-role="header">
-            <h1>人</h1>
+            <h1>中年</h1>
         </div>
         <div role="main" class="ui-content">
-           <p>中年</p>
+            <h1>中年</h1>
+           <p>中年是指是年齡已越過青壯年，但尚未開始步入老年族群的人。 一般會以年齡45至65周歲年紀之間的人算是中年，不過也有其他的定義。 中年和青壯年會有一些不同。 中年人會對飲食、物質濫用、壓力及休息比較在意。</p>
+           <img src="image/mid.jpg" alt="">
+           <div role="main" class="ui-content">
+                <div class="video-wrapper">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/7F3MYOlN_2c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div> 
+
+           <a href="#page00">回到 主頁</a>
+           <a href="#page01">回到 嬰兒</a>
+           <a href="#page02">回到 青壯年</a>
+           <a href="#page04">回到 老年</a>
+           <a href="#aboutus">回到 關於我們</a>
         </div>
         <div data-role="footer" data-position="fixed">
             <h4>copyright &copy; 2020 Wenzao DCAM wenhsuanha</h4>
         </div>
     </div><!-- 中年 -->
 
-    <!---老年-->
-    <div data-role="page" id="page04">
-        <div data-role="header">
-            <h1>人</h1>
-        </div>
-        <div role="main" class="ui-content">
-           <p>老年</p>
-        </div>
-        <div data-role="footer" data-position="fixed">
-            <h4>copyright &copy; 2020 Wenzao DCAM wenhsuanha</h4>
-        </div>
-    </div><!-- 老年 -->
+     <!---老年-->
+     <div data-role="page" id="page04">
+            <div data-role="header">
+                <h1>老年</h1>
+            </div>
+            <div role="main" class="ui-content">
+                <h1>中年</h1>
+               <p>中年是指是年齡已越過青壯年，但尚未開始步入老年族群的人。 一般會以年齡45至65周歲年紀之間的人算是中年，不過也有其他的定義。 中年和青壯年會有一些不同。 中年人會對飲食、物質濫用、壓力及休息比較在意。</p>
+               <img src="image/mid.jpg" alt="">
+               <div role="main" class="ui-content">
+                    <div class="video-wrapper">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/7F3MYOlN_2c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div> 
+    
+               <a href="#page00">回到 主頁</a>
+               <a href="#page01">回到 嬰兒</a>
+               <a href="#page02">回到 青壯年</a>
+               <a href="#page03">回到 中年</a>
+               <a href="#aboutus">回到 關於我們</a>
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <h4>copyright &copy; 2020 Wenzao DCAM wenhsuanha</h4>
+            </div>
+        </div><!-- 老年 -->
+    
 
     <!---關於我們-->
-    <div data-role="page" id="aboutus">
+    <div data-role="page" id="aboutus" data-dialog="true">
         <div data-role="header">
-            <h1>人</h1>
+            <h1>關於我們</h1>
         </div>
         <div role="main" class="ui-content">
            <p>關於我們</p>
+
+          <a href="#page00">回到 主頁</a>
+           
         </div>
         <div data-role="footer" data-position="fixed">
             <h4>copyright &copy; 2020 Wenzao DCAM wenhsuanha</h4>
