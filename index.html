@@ -6,35 +6,59 @@
 
      <!--jquery mobile-->
     <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
-    <link rel="icon" href="images.png" sizes="60*60" type="image/x-iconf">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="color.css">
+    <link rel="stylesheet" href="color.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script> 
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>   
+    <link rel="icon" href="image/images.png" type="image/x-icon">  
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
     <style>
-     #home img{
+        body{
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+        #home img{
          max-width: 100%;
-     }
-     .ui-body-c,  .ui-header{
-        font-family: 'Noto Sans TC',sans-serif;
-     }
-     .ui-footer,  .ui-header{
-        font-family: 'Trispace',sans-serif;
-     }
-     .video-wrapper{
-    position: relative;
-    padding-bottom: 56.25%;
-    overflow: hidden;
-    }
+        }
 
-    .video-wrapper iframe {
-        position: absolute;
-        top: 0;
-        left: 0; 
-        width: 100%;
-        height: 100%;
-    }
+        #page01 img{
+            max-width: 100%;
+        }
+
+        #page02 img{
+            max-width: 100%;
+        }
+        #page03 img{
+            max-width: 100%;
+        }
+        #page04 img{
+            max-width: 100%;
+        }
+        .ui-body-c,  .ui-header{
+            font-family: 'Noto Sans TC',sans-serif;
+        }
+        .ui-footer,  .ui-header{
+            font-family: 'Trispace',sans-serif;
+        }
+            .video-wrapper{
+        position: relative;
+        padding-bottom: 56.25%;
+        overflow: hidden;
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0; 
+            width: 100%;
+            height: 100%;
+        }
 
     </style>
     <title>人的一生</title>
+    
 </head>
 <body>
     <!---首頁-->
@@ -43,13 +67,31 @@
             <h1>人的一生</h1>
         </div>
         <div role="main" class="ui-content">
-           <p>Hello world</p>
-           <ul>
-               <li><a href="#page01" data-role="button" >嬰兒</a></li>
-               <li><a href="#page02" data-role="button">青壯年</a></li>
-               <li><a href="#page03"data-role="button">中年</a></li>
-               <li><a href="#page04"data-role="button">老年</a></li>
-               <li><a href="#aboutus"data-role="button">關於我們</a></li>
+           <p>從嬰兒到老,我們所經歷的</p>
+           <img src="image/life.jpg" alt="">
+           <ul data-role="listview" data-inset="true">
+
+            <li><a href="#page01" data-role="button">
+                <img src="image/images.png">
+                <h2>嬰兒</h2></a>
+            </li>
+            <li><a href="#page02" data-role="button">
+                <img src="image/younger.jpg">
+                <h2>青壯年</h2></a>
+            </li>
+            <li><a href="#page03" data-role="button">
+                <img src="image/mid.jpg">
+                <h2>中年</h2></a>
+            </li>
+            <li><a href="#page04" data-role="button">
+                <img src="image/old.jpg">
+                <h2>老年</h2></a>
+            </li>
+            <li><a href="#aboutus" data-role="button">
+                <img src="image/phone.png">
+                <h2>關於我們</h2></a>
+            </li>
+               
            </ul>
           
         </div>
@@ -63,6 +105,7 @@
         <div data-role="header">
             <h1>嬰兒</h1>
         </div>
+
         <div role="main" class="ui-content">
         <h1>嬰兒</h1>
         <p>嬰兒是指剛出生的兒童，是人類一生的第一階段。根據《說文解字》所述，嬰兒的「嬰」字，本意為女性的頸部飾物等寶貝，後引申解作為抱在胸前哺乳之初生兒。而嬰兒的英文「infant」源於拉丁文「in-fans」一詞，意為「不懂說話」。英語一般語境下是指小於一歲或未懂得走路的人類[1]。中文中「嬰兒」則指一歲以下或未斷奶的兒童，不管是否能夠行走。</p>
@@ -72,17 +115,22 @@
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/7bvHtmKhcJ0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div> 
          </div>
-           <a href="#page00">回到 主頁</a>
-           <a href="#page02">回到 青壯年</a>
-           <a href="#page03">回到 中年</a>
-           <a href="#page04">回到 老年</a>
-           <a href="#aboutus">回到 關於我們</a>
+         <div data-role="navbar">
+           <ul>
+               <li><a href="#page00" data-icon="bullets"> 主頁</a></li>
+               <li><a href="#page02" data-icon="bullets">青壯年</a></li>
+               <li><a href="#page03" data-icon="bullets">中年</a></li>
+               <li><a href="#page04" data-icon="bullets">老年</a></li>
+               <li><a href="#aboutus" data-icon="bullets">關於我們</a></li>
+            </ul>
         </div>
-
+         </div>
         
         <div data-role="footer" data-position="fixed">
             <h4>copyright &copy; 2020 Wenzao DCAM wenhsuanha</h4>
         </div>
+
+    
     </div><!-- 嬰兒 -->
 
     <!---青壯年-->
@@ -102,11 +150,15 @@
                 </div> 
          </div>
 
-           <a href="#page00">回到 主頁</a>
-           <a href="#page01">回到 嬰兒</a>
-           <a href="#page03">回到 中年</a>
-           <a href="#page04">回到 老年</a>
-           <a href="#aboutus">回到 關於我們</a>
+         <div data-role="navbar">
+            <ul>
+                <li><a href="#page00" data-icon="bullets"> 主頁</a></li>
+                <li><a href="#page01" data-icon="bullets">嬰兒</a></li>
+                <li><a href="#page03" data-icon="bullets">中年</a></li>
+                <li><a href="#page04" data-icon="bullets">老年</a></li>
+                <li><a href="#aboutus" data-icon="bullets">關於我們</a></li>
+             </ul>
+         </div>
         </div>
         <div data-role="footer" data-position="fixed">
             <h4>copyright &copy; 2020 Wenzao DCAM wenhsuanha</h4>
@@ -127,37 +179,50 @@
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/7F3MYOlN_2c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div> 
 
-           <a href="#page00">回到 主頁</a>
-           <a href="#page01">回到 嬰兒</a>
-           <a href="#page02">回到 青壯年</a>
-           <a href="#page04">回到 老年</a>
-           <a href="#aboutus">回到 關於我們</a>
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#page00" data-icon="bullets"> 主頁</a></li>
+                        <li><a href="#page01" data-icon="bullets">嬰兒</a></li>
+                        <li><a href="#page02" data-icon="bullets">青壯年</a></li>
+                        <li><a href="#page04" data-icon="bullets">老年</a></li>
+                        <li><a href="#aboutus" data-icon="bullets">關於我們</a></li>
+                     </ul>
+                 </div>
         </div>
+    </div>
         <div data-role="footer" data-position="fixed">
             <h4>copyright &copy; 2020 Wenzao DCAM wenhsuanha</h4>
         </div>
+        
     </div><!-- 中年 -->
 
-     <!---老年-->
-     <div data-role="page" id="page04">
+         <!---老年-->
+         <div data-role="page" id="page04">
             <div data-role="header">
                 <h1>老年</h1>
             </div>
+
             <div role="main" class="ui-content">
-                <h1>中年</h1>
-               <p>中年是指是年齡已越過青壯年，但尚未開始步入老年族群的人。 一般會以年齡45至65周歲年紀之間的人算是中年，不過也有其他的定義。 中年和青壯年會有一些不同。 中年人會對飲食、物質濫用、壓力及休息比較在意。</p>
-               <img src="image/mid.jpg" alt="">
+                <h1>老年</h1>
+               <p>不同的文化圈對於老年人有著不同的定義。由於生命的周期是一個漸變的過程，壯年到老年的分界線往往是很模糊的。有些人認為做了祖父祖母就是進入了老年，有的人認為退休是進入老年的一個標誌。 世界衛生組織（WHO）及西方一些已開發國家對老年人的定義為60周歲以上的人群。中國古代曾將50歲作為劃分[3]，中華人民共和國政府規定為60周歲（中華人民共和國老年人權益保障法第二條規定：「本法所稱老年人是指60周歲以上的公民」）。台灣對老年人的定義為65周歲以上的人群。
+                </p>
+               <img src="image/old.jpg" alt="">
                <div role="main" class="ui-content">
                     <div class="video-wrapper">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/7F3MYOlN_2c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/4Ql5CjlPBec" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div> 
-    
-               <a href="#page00">回到 主頁</a>
-               <a href="#page01">回到 嬰兒</a>
-               <a href="#page02">回到 青壯年</a>
-               <a href="#page03">回到 中年</a>
-               <a href="#aboutus">回到 關於我們</a>
+                </div>
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#page00" data-icon="bullets"> 主頁</a></li>
+                        <li><a href="#page01" data-icon="bullets">嬰兒</a></li>
+                        <li><a href="#page02" data-icon="bullets">青壯年</a></li>
+                        <li><a href="#page03" data-icon="bullets">中年</a></li>
+                        <li><a href="#aboutus" data-icon="bullets">關於我們</a></li>
+                     </ul>
+                 </div>
             </div>
+
             <div data-role="footer" data-position="fixed">
                 <h4>copyright &copy; 2020 Wenzao DCAM wenhsuanha</h4>
             </div>
